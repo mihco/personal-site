@@ -1,4 +1,5 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-align: start;
+    /* adds scrolling behavior to nav bar */
 }
