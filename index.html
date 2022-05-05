@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="C:/users/mihco/onedrive/desktop/website/personalsite/jquery.webticker.min.js"></script>
+      <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-amber-100 snap-x">
+  <div id="nav-bar" class="fixed flex flex-col h-screen grid place-items-center inset-y-0 right-0 snap-start">
+    <div class="flex flex-col">
+      <a href="#page-1">b</a>
+      <a href="#page-2">b</a>
+      <a href="#page-3">b</a>
+    </div>
+
+  </div>
+  <div id="page-1" class="flex h-screen snap-start">
+    <div class="block bg-amber-200 w-3/6 grid grid-rows-6 grid-cols-6">
+      <div class="col-span-3 row-start-3 col-start-2">
+        <h1 class="text-8xl"><b>Hello.</b></h1>
+        
+      </div>
+      <h1 class="text-3xl row-start-4 col-start-3 col-span-3"><b>...follow my journey</b></h1>
+    </div>
+    <div class="flex bg-amber-400 w-3/6 grid grid-rows-5 grid-cols-1">
+      <div class="flex items-center border-2 border-stone-900">
+        <ul id="ticker-1" class="row-start-1">
+          <li class="text-3xl">Michal</li>
+          <li class="text-3xl">Urban</li>
+        </ul>
+      </div>
+      <div class="flex items-center border-t-0 border-2 border-stone-900">
+        <ul id="ticker-2" class="row-start-2">
+          <li class="text-3xl">Michal</li>
+          <li class="text-3xl">Urban</li>
+        </ul>
+      </div>
+      <div class="flex items-center border-t-0 border-2 border-stone-900">
+        <ul id="ticker-3" class="row-start-3">
+          <li class="text-3xl">Michal</li>
+          <li class="text-3xl">Urban</li>
+        </ul>
+      </div>
+      <div class="flex items-center border-t-0 border-2 border-stone-900">
+        <ul id="ticker-4" class="row-start-4" style="height: vh;">
+          <li style="font-size: vh;">Michal</li>
+          <li style="font-size: vh;">Urban</li>
+        </ul>
+      </div>
+      <div class="flex items-center border-t-0 border-2 border-stone-900">
+        <ul id="ticker-5" class="row-start-5">
+          <li class="text-3xl">Michal</li>
+          <li class="text-3xl">Urban</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="page-2" class="grid grid-rows-4 grid-cols-12 h-screen snap-start">
+      <div class="col-span-2 col-end-12 row-start-2 row-span-2 text-center">
+          <ul class="flex flex-col gap-0.5 py-1 justify-evenly h-full">
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Goals</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Daily Update</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Timeline</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Portfolio</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Reflections</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Bucket List</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Language Learning Path</li>
+          </ul>
+      </div>
+  </div>
+  <div id="page-3" class="bg-amber-700 h-screen">
+
+  </div>
+</body>
+<script>$('#ticker-1').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
+<script>$('#ticker-2').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "vh"});</script>
+<script>$('#ticker-3').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
+<script>$('#ticker-4').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "vh"});</script>
+<script>$('#ticker-5').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
+</html>
