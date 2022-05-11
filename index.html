@@ -45,10 +45,10 @@
           <li class="text-3xl">Urban</li>
         </ul>
       </div>
-      <div class="flex items-center border-t-0 border-2 border-stone-900">
-        <ul id="ticker-2" class="row-start-2">
-          <li class="text-3xl">Michal</li>
-          <li class="text-3xl">Urban</li>
+      <div class="flex items-center border-t-0 border-2 border-stone-900 h-full">
+        <ul id="ticker-2" class="row-start-2 h-full w-full">
+          <li class="h-full"><span class="ticker-name h-full">Michal</span></li>
+          <li class="h-full"><span class="ticker-name">Urban</span></li>
         </ul>
       </div>
       <div class="flex items-center border-t-0 border-2 border-stone-900">
@@ -89,7 +89,7 @@
   </div>
 </body>
 <script>$('#ticker-1').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
-<script>$('#ticker-2').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "vh"});</script>
+<script>$('#ticker-2').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "100%"});</script>
 <script>$('#ticker-3').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
 <script>$('#ticker-4').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "vh"});</script>
 <script>$('#ticker-5').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>

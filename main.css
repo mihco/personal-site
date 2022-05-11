@@ -3,3 +3,11 @@ html {
     scroll-snap-align: start;
     /* adds scrolling behavior to nav bar */
 }
+
+.mask {
+    height: 100%;
+}
+
+.ticker-name {
+    font-size: 100%;
+}
