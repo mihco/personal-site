@@ -15,13 +15,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-      <div id="header">
-        <h1>Hello</h1>
+        <div className="header">
+          <h1 className='header-content'>Blog</h1>
+          <h1 className='header-content'><a href="">Home</a></h1>
+        </div>
+        <div className="content">
+          { this.state.loadedContent ? this.state.loadedContent.map((item) => <Post key={item} image="" title="Hello" date={item} content={loremIpsum["loremIpsum"]}/>) : <h1>Loading</h1>}
+        </div>
       </div>
-      <div className="content">
-        { this.state.loadedContent ? this.state.loadedContent.map((item) => <Post key={item} image="" title="Hello" date={item} content={loremIpsum["loremIpsum"]}/>) : <h1>Loading</h1>}
-      </div>
-    </div>
     )
   }
 }

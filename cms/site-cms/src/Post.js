@@ -2,14 +2,14 @@
 function Post(props) {
     return (
       <div className="post">
-          <div className="post-image"><img src={props.image}></img></div>
-          <div className="post-title">
+          <div className="inner-post post-image"><img src={props.image}></img></div>
+          <div className="inner-post post-title">
             <h1>{props.title}</h1>
           </div>
-          <div className="post-date">
+          <div className="inner-post post-date">
             <h3>{props.date}</h3>
           </div>
-          <div className="post-content">
+          <div className="inner-post post-content">
             <span>{props.content}</span>
           </div>
       </div>
