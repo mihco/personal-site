@@ -11,3 +11,7 @@ html {
 .ticker-name {
     font-size: 100%;
 }
+
+.bullet-shadow {
+    text-shadow: 2px 2px orange;
+}
