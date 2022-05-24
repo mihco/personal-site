@@ -39,8 +39,8 @@
       </div>
       <div class="flex items-center border-t-0 border-2 border-stone-900 h-full">
         <ul id="ticker-2" class="row-start-2 h-full w-full">
-          <li class="h-full"><span class="ticker-name h-full">Michal</span></li>
-          <li class="h-full"><span class="ticker-name">Urban</span></li>
+          <li class="text-3xl"><span class="ticker-name h-full">Michal</span></li>
+          <li class="text-3xl"><span class="ticker-name">Urban</span></li>
         </ul>
       </div>
       <div class="flex items-center border-t-0 border-2 border-stone-900">
@@ -64,7 +64,7 @@
     </div>
   </div>
   <div id="nav-bar" class="fixed flex flex-col h-screen grid place-items-center inset-y-0 right-0 snap-start p-4">
-    <div class="flex flex-col bg-amber-200 p-2 rounded-lg z-100">
+    <div class="flex flex-col bg-amber-300 p-2 rounded-lg z-100">
       <a href="#page-1" class="bullet-shadow">♥</a>
       <a href="#page-2" class="bullet-shadow">♦</a>
       <a href="#page-3" class="bullet-shadow">♣</a>
@@ -75,25 +75,44 @@
     <div> <!-- Add more about me description -->
       <h1>My name is Michal Urban</h1>
       <h1>I'm a rising junior studying computer science at NYU</h1>
+      <h1>My main interests in computer science are web development, computer networks and artificial intelligence</h1>
+      <h1>Check out my portofolio and find the easter eggs laid about :)</h1>
     </div>
     <div class="col-span-2 col-end-12 row-start-2 row-span-2 text-center">
         <ul class="flex flex-col gap-0.5 py-1 justify-evenly h-full">
             <li class="py-1 bg-amber-300 rounded-md mx-1">Goals</li>
             <li class="py-1 bg-amber-300 rounded-md mx-1"><a href="cms/site-cms/public/index.html">Blog</a></li>
             <li class="py-1 bg-amber-300 rounded-md mx-1">Timeline</li>
-            <li class="py-1 bg-amber-300 rounded-md mx-1">Portfolio</li>
             <li class="py-1 bg-amber-300 rounded-md mx-1">Reflections</li>
             <li class="py-1 bg-amber-300 rounded-md mx-1">Bucket List</li>
             <li class="py-1 bg-amber-300 rounded-md mx-1">Language Learning Path</li>
         </ul>
     </div>
   </div>
-  <div id="page-3" class="bg-amber-700 h-screen">
+  <div id="page-3" class="bg-amber-200 h-screen grid grid-rows-4 grid-cols-12">
 
+    <div class="col-span-2 col-start-2 row-start-2 row-span-2 text-center">
+      <div>
+        <a href="https://github.com/mihco/spotify-timer-site"><img src="https://lh3.googleusercontent.com/D2SL10z61HyqCzJUCpajuuneqFmFaZo1IR8zy-CgiZg9sXOmCt3arOEngUPZGsrN70h8kzI7qkOz5cMWoWdP=w1920-h820" class="w-full rounded-md border-4 border-black"/></a>
+      </div>
+      <h1 class="text-3xl">Spotifimer</h1>
+    </div>
+    <div class="col-span-2 col-start-6 row-start-2 row-span-2 text-center">
+      <div>
+        <a href="https://docs.google.com/document/d/1PMyPJhWiI1Xod5M5GLBeZvo5Vm75RgVlZXvOFvOiVn8/edit?usp=sharing"><img src="" class="w-full rounded-md border-4 border-black"/></a>
+      </div>
+      <h1 class="text-3xl">Koha Internship</h1>
+    </div>
+    <div class="col-span-2 col-start-10 row-start-2 row-span-2 text-center">
+      <div>
+        <a href=""><img src="" class="w-full rounded-md border-4 border-black"/></a>
+      </div>
+      <h1 class="text-3xl">All Projects</h1>
+    </div>
   </div>
 </body>
 <script>$('#ticker-1').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
-<script>$('#ticker-2').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "100%"});</script>
+<script>$('#ticker-2').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "vh"});</script>
 <script>$('#ticker-3').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
 <script>$('#ticker-4').webTicker({duplicate: true, speed: 100, startEmpty: false, direction: "right", height: "vh"});</script>
 <script>$('#ticker-5').webTicker({duplicate: true, speed: 100, startEmpty: false, height: "vh"});</script>
