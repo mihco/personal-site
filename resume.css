@@ -9,3 +9,8 @@
     display: inline-block;
 }
   
+
+.resume-doc {
+    height: 80vh;
+    width: 60vw;
+}
