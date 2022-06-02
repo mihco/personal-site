@@ -11,6 +11,10 @@ class App extends React.Component {
       loadedContent: [1,2,3,4]
     }
   }
+
+  componentDidMount() {
+
+  }
   
   render() {
     return (
@@ -18,7 +22,7 @@ class App extends React.Component {
         <div className="header bg-amber-200 fixed opacity-80 block">
           <ul>
             <li className='header-content p-4'>Blog</li>
-            <li className='header-content p-4 absolute right-0'><a href="">Home</a></li>
+            <li className='header-content p-4 absolute right-0'><a href="index.html">Home</a></li>
           </ul>
         </div>
         <div className="content block">
