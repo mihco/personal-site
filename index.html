@@ -21,103 +21,105 @@
       <script src="jquery.webticker.min.js"></script>
       <link rel="stylesheet" href="main.css">
 </head>
-<body class="bg-amber-100 snap-x">
-  <div id="page-1" class="flex h-screen snap-start">
-    <div class="block bg-amber-200 w-3/6 grid grid-rows-6 grid-cols-6">
-      <div class="col-span-3 row-start-3 col-start-2">
-        <h1 class="text-8xl"><b>Hello.</b></h1>
-        
+<body class="bg-amber-100">
+  <div class="snap-y">
+    <div id="page-1" class="flex h-screen snap-center">
+      <div class="block bg-amber-200 w-3/6 grid grid-rows-6 grid-cols-6">
+        <div class="col-span-3 row-start-3 col-start-2">
+          <h1 class="text-8xl"><b>Hello.</b></h1>
+          
+        </div>
+        <h1 class="text-3xl row-start-4 col-start-3 col-span-3"><b>...follow my journey</b></h1>
       </div>
-      <h1 class="text-3xl row-start-4 col-start-3 col-span-3"><b>...follow my journey</b></h1>
+      <div class="flex bg-amber-400 w-3/6 grid grid-rows-5 grid-cols-1">
+        <div class="flex items-center border-2 border-stone-900">
+          <ul id="ticker-1" class="row-start-1">
+            <li class="text-3xl">Michal</li>
+            <li class="text-3xl">Urban</li>
+          </ul>
+        </div>
+        <div class="flex items-center border-t-0 border-2 border-stone-900 h-full">
+          <ul id="ticker-2" class="row-start-2 h-full w-full">
+            <li class="text-3xl"><span class="ticker-name h-full">Michal</span></li>
+            <li class="text-3xl"><span class="ticker-name">Urban</span></li>
+          </ul>
+        </div>
+        <div class="flex items-center border-t-0 border-2 border-stone-900">
+          <ul id="ticker-3" class="row-start-3">
+            <li class="text-3xl">Michal</li>
+            <li class="text-3xl">Urban</li>
+          </ul>
+        </div>
+        <div class="flex items-center border-t-0 border-2 border-stone-900" style="font-size: vh;">
+          <ul id="ticker-4" class="row-start-4" style="height: 100%; font-size: vh;">
+            <li class="text-3xl">Michal</li>
+            <li class="text-3xl">Urban</li>
+          </ul>
+        </div>
+        <div class="flex items-center border-t-0 border-2 border-stone-900">
+          <ul id="ticker-5" class="row-start-5">
+            <li class="text-3xl">Michal</li>
+            <li class="text-3xl">Urban</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="flex bg-amber-400 w-3/6 grid grid-rows-5 grid-cols-1">
-      <div class="flex items-center border-2 border-stone-900">
-        <ul id="ticker-1" class="row-start-1">
-          <li class="text-3xl">Michal</li>
-          <li class="text-3xl">Urban</li>
-        </ul>
+    <div id="page-2" class="grid grid-rows-4 grid-cols-12 h-screen snap-center text-center">
+      <div class="row-start-1 row-span-1 col-start-2 col-span-2 self-center">
+        <h1 class="py-4">My name is Michal Urban</h1>
+        <hr class="border-t-amber-300 border-t-4 border-dashed">
       </div>
-      <div class="flex items-center border-t-0 border-2 border-stone-900 h-full">
-        <ul id="ticker-2" class="row-start-2 h-full w-full">
-          <li class="text-3xl"><span class="ticker-name h-full">Michal</span></li>
-          <li class="text-3xl"><span class="ticker-name">Urban</span></li>
-        </ul>
+      <div class="row-start-2 row-span-1 col-start-3 col-span-2 self-center">
+        <h1 class="py-4">I'm a rising junior studying computer science at NYU</h1>
+        <hr class="border-t-amber-300 border-t-4 border-dashed">
       </div>
-      <div class="flex items-center border-t-0 border-2 border-stone-900">
-        <ul id="ticker-3" class="row-start-3">
-          <li class="text-3xl">Michal</li>
-          <li class="text-3xl">Urban</li>
-        </ul>
+      <div class="row-start-3 row-span-1 col-start-2 col-span-2 self-center">
+        <h1 class="py-4">My main interests in computer science are web development, computer networks and artificial intelligence</h1>
+        <hr class="border-t-amber-300 border-t-4 border-dashed">
       </div>
-      <div class="flex items-center border-t-0 border-2 border-stone-900" style="font-size: vh;">
-        <ul id="ticker-4" class="row-start-4" style="height: 100%; font-size: vh;">
-          <li class="text-3xl">Michal</li>
-          <li class="text-3xl">Urban</li>
-        </ul>
+      <div class="row-start-4 row-span-1 col-start-3 col-span-2 self-center">
+        <h1 class="py-4">Check out my portfolio and find the easter eggs laid about :)</h1>
+        <hr class="border-t-amber-300 border-t-4 border-dashed">
       </div>
-      <div class="flex items-center border-t-0 border-2 border-stone-900">
-        <ul id="ticker-5" class="row-start-5">
-          <li class="text-3xl">Michal</li>
-          <li class="text-3xl">Urban</li>
-        </ul>
+      <div class="col-span-2 col-end-12 row-start-2 row-span-2 text-center">
+          <ul class="flex flex-col gap-0.5 py-1 justify-evenly h-full">
+            <a href="goals.html"><li class="py-1 bg-amber-300 rounded-md mx-1">Goals</li></a>
+            <a href="resume.html"><li class="py-1 bg-amber-300 rounded-md mx-1">Resume</li></a>
+            <a href="cms/site-cms/public/index.html"><li class="py-1 bg-amber-300 rounded-md mx-1">Blog</li></a>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Timeline</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Bucket List</li>
+              <li class="py-1 bg-amber-300 rounded-md mx-1">Language Learning Path</li>
+          </ul>
+      </div>
+    </div>
+    <div id="page-3" class="bg-amber-200 h-screen snap-center grid grid-rows-4 grid-cols-12">
+  
+      <div class="col-span-2 col-start-2 row-start-2 row-span-2 text-center">
+        <div>
+          <a href="https://github.com/mihco/spotify-timer-site"><img src="content/Spotifimer.png" class="w-full rounded-md border-4 border-black"/></a>
+        </div>
+        <h1 class="text-3xl">Spotifimer</h1>
+      </div>
+      <div class="col-span-2 col-start-6 row-start-2 row-span-2 text-center">
+        <div>
+          <a href="https://docs.google.com/document/d/1PMyPJhWiI1Xod5M5GLBeZvo5Vm75RgVlZXvOFvOiVn8/edit?usp=sharing"><img src="content/bywater-solutions-logo.png" class="w-full rounded-md border-4 border-black"/></a>
+        </div>
+        <h1 class="text-3xl">Koha Internship</h1>
+      </div>
+      <div class="col-span-2 col-start-10 row-start-2 row-span-2 text-center">
+        <div>
+          <a href=""><img src="content/GitHub-Mark.png" class="w-full rounded-md border-4 border-black"/></a>
+        </div>
+        <h1 class="text-3xl">All Projects</h1>
       </div>
     </div>
   </div>
-  <div id="nav-bar" class="fixed flex flex-col h-screen grid place-items-center inset-y-0 right-0 snap-start p-4">
+  <div id="nav-bar" class="fixed flex flex-col h-screen grid place-items-center inset-y-0 right-0 p-4">
     <div class="flex flex-col bg-amber-300 p-2 rounded-lg z-100">
       <a href="#page-1" class="bullet-shadow">♥</a>
       <a href="#page-2" class="bullet-shadow">♦</a>
       <a href="#page-3" class="bullet-shadow">♣</a>
       <a href="#page-4" class="bullet-shadow">♠</a>
-    </div>
-  </div>
-  <div id="page-2" class="grid grid-rows-4 grid-cols-12 h-screen snap-start text-center">
-    <div class="row-start-1 row-span-1 col-start-2 col-span-2 self-center">
-      <h1 class="py-4">My name is Michal Urban</h1>
-      <hr class="border-t-amber-300 border-t-4 border-dashed">
-    </div>
-    <div class="row-start-2 row-span-1 col-start-3 col-span-2 self-center">
-      <h1 class="py-4">I'm a rising junior studying computer science at NYU</h1>
-      <hr class="border-t-amber-300 border-t-4 border-dashed">
-    </div>
-    <div class="row-start-3 row-span-1 col-start-2 col-span-2 self-center">
-      <h1 class="py-4">My main interests in computer science are web development, computer networks and artificial intelligence</h1>
-      <hr class="border-t-amber-300 border-t-4 border-dashed">
-    </div>
-    <div class="row-start-4 row-span-1 col-start-3 col-span-2 self-center">
-      <h1 class="py-4">Check out my portfolio and find the easter eggs laid about :)</h1>
-      <hr class="border-t-amber-300 border-t-4 border-dashed">
-    </div>
-    <div class="col-span-2 col-end-12 row-start-2 row-span-2 text-center">
-        <ul class="flex flex-col gap-0.5 py-1 justify-evenly h-full">
-            <li class="py-1 bg-amber-300 rounded-md mx-1"><a href="goals.html">Goals</a></li>
-            <li class="py-1 bg-amber-300 rounded-md mx-1"><a href="resume.html">Resume</a></li>
-            <li class="py-1 bg-amber-300 rounded-md mx-1"><a href="cms/site-cms/public/index.html">Blog</a></li>
-            <li class="py-1 bg-amber-300 rounded-md mx-1">Timeline</li>
-            <li class="py-1 bg-amber-300 rounded-md mx-1">Bucket List</li>
-            <li class="py-1 bg-amber-300 rounded-md mx-1">Language Learning Path</li>
-        </ul>
-    </div>
-  </div>
-  <div id="page-3" class="bg-amber-200 h-screen grid grid-rows-4 grid-cols-12">
-
-    <div class="col-span-2 col-start-2 row-start-2 row-span-2 text-center">
-      <div>
-        <a href="https://github.com/mihco/spotify-timer-site"><img src="content/Spotifimer.png" class="w-full rounded-md border-4 border-black"/></a>
-      </div>
-      <h1 class="text-3xl">Spotifimer</h1>
-    </div>
-    <div class="col-span-2 col-start-6 row-start-2 row-span-2 text-center">
-      <div>
-        <a href="https://docs.google.com/document/d/1PMyPJhWiI1Xod5M5GLBeZvo5Vm75RgVlZXvOFvOiVn8/edit?usp=sharing"><img src="content/bywater-solutions-logo.png" class="w-full rounded-md border-4 border-black"/></a>
-      </div>
-      <h1 class="text-3xl">Koha Internship</h1>
-    </div>
-    <div class="col-span-2 col-start-10 row-start-2 row-span-2 text-center">
-      <div>
-        <a href=""><img src="content/GitHub-Mark.png" class="w-full rounded-md border-4 border-black"/></a>
-      </div>
-      <h1 class="text-3xl">All Projects</h1>
     </div>
   </div>
 </body>
