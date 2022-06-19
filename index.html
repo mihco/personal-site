@@ -22,6 +22,16 @@
       <link rel="stylesheet" href="main.css">
 </head>
 <body class="bg-amber-100">
+  <div class="fixed w-screen z-10 bottom-0">
+    <ul class="inline-block flex gap-0.5 py-1 justify-evenly h-full sticky bg-amber-300">
+      <a href="goals.html"><li class="py-1 rounded-md">Goals</li></a>
+      <a href="resume.html"><li class="py-1  rounded-md">Resume</li></a>
+      <a href="cms/site-cms/public/index.html"><li class="py-1 rounded-md">Blog</li></a>
+        <li class="py-1 rounded-md">Timeline</li>
+        <li class="py-1 rounded-md">Bucket List</li>
+        <li class="py-1 rounded-md">Language Learning Path</li>
+    </ul>
+  </div>
   <div class="snap-y">
     <div id="page-1" class="flex h-screen snap-center">
       <div class="block bg-amber-200 w-3/6 grid grid-rows-6 grid-cols-6">
@@ -91,16 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="col-span-2 col-end-12 row-start-2 row-span-2 text-center">
-    <ul class="flex flex-col gap-0.5 py-1 justify-evenly h-full">
-      <a href="goals.html"><li class="py-1 bg-amber-300 rounded-md mx-1">Goals</li></a>
-      <a href="resume.html"><li class="py-1 bg-amber-300 rounded-md mx-1">Resume</li></a>
-      <a href="cms/site-cms/public/index.html"><li class="py-1 bg-amber-300 rounded-md mx-1">Blog</li></a>
-        <li class="py-1 bg-amber-300 rounded-md mx-1">Timeline</li>
-        <li class="py-1 bg-amber-300 rounded-md mx-1">Bucket List</li>
-        <li class="py-1 bg-amber-300 rounded-md mx-1">Language Learning Path</li>
-    </ul>
-  </div>
+  
   <div id="nav-bar" class="fixed flex flex-col h-screen grid place-items-center inset-y-0 right-0 p-4">
     <div class="flex flex-col bg-amber-300 p-2 rounded-lg z-100">
       <a href="#page-1" class="bullet-shadow">♥</a>
