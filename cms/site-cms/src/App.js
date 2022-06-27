@@ -8,12 +8,12 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      loadedContent: [1,2,3,4]
+      loadedContent: ""
     }
   }
 
   componentDidMount() {
-    fetch("")
+    fetch("/posts").then(res => {this.setState({loadedContent: res.text()}); console.log(this.state.loadedContent)})
   }
   
   render() {
