@@ -11,7 +11,7 @@ cms/site-cms/.pnp
 cms/site-cms/coverage
 
 # production
-cms/site-cms/build
+
 
 # misc
 .DS_Store
