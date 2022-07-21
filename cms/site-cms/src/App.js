@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("/posts").then(res => res.text()).then(result => {console.log(result)})
+    fetch("https://personalsitebackendjs.herokuapp.com/posts").then(res => {console.log(res); return res.text()}).then(result => {console.log(result)})
   }
   
   render() {
