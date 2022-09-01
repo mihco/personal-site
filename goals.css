@@ -1,0 +1,15 @@
+.timeline {
+    display: block;
+}
+
+.date-time {
+    width: 30%;
+}
+
+.description {
+    width: 70%;
+}
+
+.timeline-row {
+    display: flex;
+}
